@@ -6,8 +6,7 @@ const mysql = require('mysql');
 
 
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const port = 3001;
 
 app.set('port', port);
 app.set('secPort', port + 443);
@@ -16,7 +15,7 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root_password',
-    database: 'test'
+    database: 'college'
 });
 
 db.connect((err) => {
